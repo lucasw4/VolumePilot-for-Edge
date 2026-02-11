@@ -1,0 +1,128 @@
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", "SF Pro Text", Tahoma, sans-serif;
+  --bg-0: #0f2638;
+  --text-0: #d7ffe2;
+  --text-1: #9de8b3;
+  --accent: #44ff75;
+  --accent-dark: #0f6a2f;
+  --muted: #7ecb98;
+  --danger: #ff6b6b;
+}
+
+html {
+  border-radius: 0;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  width: 236px;
+  border-radius: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(110px 90px at 10% -10%, rgba(73, 255, 133, 0.22) 0%, transparent 100%),
+    radial-gradient(160px 120px at 100% 100%, rgba(31, 193, 94, 0.12) 0%, transparent 100%),
+    var(--bg-0);
+  color: var(--text-0);
+  border: 1px solid rgba(72, 246, 124, 0.28);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.panel {
+  padding: 10px 12px 8px;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-1);
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.right-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-button {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accent-dark);
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-dark);
+  padding: 0;
+  cursor: pointer;
+  transition: transform 120ms ease, filter 120ms ease;
+}
+
+.icon-button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.icon-button svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.icon-fraction {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.1px;
+}
+
+.icon-fraction .num {
+  transform: translateY(-2px);
+}
+
+.icon-fraction .den {
+  transform: translateY(2px);
+}
+
+.icon-fraction .slash {
+  font-size: 13px;
+}
+
+#muteButton .icon-muted {
+  display: none;
+}
+
+#muteButton[data-muted="true"] .icon-unmuted {
+  display: none;
+}
+
+#muteButton[data-muted="true"] .icon-muted {
+  display: block;
+}
+
+.status {
+  margin: 6px 0 0;
+  min-height: 0;
+  font-size: 12px;
+  color: var(--muted);
+}

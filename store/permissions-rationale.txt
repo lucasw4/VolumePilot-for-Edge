@@ -1,0 +1,22 @@
+Permissions rationale for VolumePilot for Edge:
+
+- tabs:
+  Required to discover and target tabs in the current Edge window when applying volume and mute changes.
+
+- storage:
+  Required to persist user-selected settings (volume and mute state) between browser sessions.
+
+- scripting:
+  Required to apply audio state to page media elements (audio/video) on supported websites.
+
+- tabCapture:
+  Required as a fallback control path for audio processing where direct media element control is insufficient.
+
+- offscreen:
+  Required to run background audio processing via an offscreen document in Manifest V3.
+
+- host_permissions <all_urls>:
+  Required to control audio on regular web pages across user tabs.
+
+Data handling:
+- The extension does not collect, sell, or transmit personal data.

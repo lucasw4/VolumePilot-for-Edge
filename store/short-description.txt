@@ -1,0 +1,1 @@
+Control, mute, halve, and reset tab audio in Edge with fast per-window controls.

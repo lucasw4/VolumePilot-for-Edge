@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edge Volume Controller</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <label for="volumeSlider" class="label-row">
+        <span>Volume</span>
+        <span id="volumeValue">100%</span>
+      </label>
+      <input id="volumeSlider" type="range" min="0" max="200" step="1" value="100" />
+      <div class="button-row">
+        <button id="muteButton" type="button" class="icon-button" aria-label="Mute or unmute" title="Mute">
+          <svg class="icon-unmuted" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 10h4l5-4v12l-5-4H3v-4Zm12.7-1.5a1 1 0 0 1 1.4 0 5.2 5.2 0 0 1 0 7.3 1 1 0 1 1-1.4-1.4 3.2 3.2 0 0 0 0-4.5 1 1 0 0 1 0-1.4Zm2.7-2.7a1 1 0 0 1 1.4 0 9 9 0 0 1 0 12.8 1 1 0 1 1-1.4-1.4 7 7 0 0 0 0-9.9 1 1 0 0 1 0-1.5ZM4.7 19.9a1 1 0 0 1 0-1.4L19.3 3.9a1 1 0 1 1 1.4 1.4L6.1 19.9a1 1 0 0 1-1.4 0Z" />
+          </svg>
+          <svg class="icon-muted" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 10h4l5-4v12l-5-4H3v-4Zm12.7-1.5a1 1 0 0 1 1.4 0 5.2 5.2 0 0 1 0 7.3 1 1 0 1 1-1.4-1.4 3.2 3.2 0 0 0 0-4.5 1 1 0 0 1 0-1.4Zm2.7-2.7a1 1 0 0 1 1.4 0 9 9 0 0 1 0 12.8 1 1 0 1 1-1.4-1.4 7 7 0 0 0 0-9.9 1 1 0 0 1 0-1.5ZM4.7 19.9a1 1 0 0 1 0-1.4L19.3 3.9a1 1 0 1 1 1.4 1.4L6.1 19.9a1 1 0 0 1-1.4 0Z" />
+          </svg>
+        </button>
+        <div class="right-actions">
+          <button id="halfButton" type="button" class="icon-button" aria-label="Half volume" title="Half volume">
+            <span class="icon-fraction" aria-hidden="true">
+              <span class="num">1</span>
+              <span class="slash">/</span>
+              <span class="den">2</span>
+            </span>
+          </button>
+          <button id="resetButton" type="button" class="icon-button" aria-label="Reset to 100%" title="Reset to 100%">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 4a8 8 0 1 1-7.75 10h2.1A6 6 0 1 0 12 6c-1.72 0-3.27.73-4.36 1.89L10 10H4V4l2.26 2.26A7.95 7.95 0 0 1 12 4Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <p id="statusText" class="status"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

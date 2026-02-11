@@ -1,0 +1,15 @@
+VolumePilot for Edge gives you simple, precise audio control for tabs in your current Microsoft Edge window.
+
+Features:
+- Adjust volume from 0% to 200%
+- Mute instantly and unmute quickly
+- Half the current volume with one click
+- Reset volume to 100% instantly
+- Apply settings across tabs in the current window
+- Auto-apply settings to newly opened tabs
+- Save your last-used settings between sessions
+
+VolumePilot is designed for fast, practical control without changing your OS-level Edge mixer volume.
+
+Note:
+- Some restricted pages (such as edge:// pages) cannot be controlled due to browser limitations.

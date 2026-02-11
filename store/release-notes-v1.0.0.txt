@@ -1,0 +1,8 @@
+Initial release of VolumePilot for Edge.
+
+Highlights:
+- Per-window tab audio control
+- Volume range from 0% to 200%
+- Mute, half, and reset quick actions
+- Auto-apply settings to new tabs in controlled windows
+- Persisted volume and mute settings across sessions
