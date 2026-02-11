@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "VolumePilot for Edge",
   "version": "1.0.0",
-  "description": "Control audio across tabs in your current Microsoft Edge window with a clean, fast popup. Adjust volume from 0% to 200%, mute instantly, halve volume in one click, or reset to 100%. New tabs inherit your current settings automatically, and your last-used preferences are saved between sessions.",
+  "description": "Control tab audio in Edge. Adjust volume from 0% to 200%, mute instantly, and apply settings across tabs in your current window.",
   "permissions": [
     "tabs",
     "storage",
